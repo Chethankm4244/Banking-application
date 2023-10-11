@@ -1,0 +1,451 @@
+*{
+  margin: 0;padding: 0;
+}
+
+.container{
+ background-color: rgb(247, 239, 229);
+  width: 100vw;
+  height: fit-content;
+}
+.header{
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  height: 8vh;
+  background-color: white;
+  color: rgb(62, 60, 60);
+}
+.left-header{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 18px;
+}
+.right-header{
+  flex: 1;
+  display: flex;
+  justify-content: end;
+  margin-right: 50px;
+}
+.bank-name{
+  margin-left: 50px;
+}
+.login-btn-container{
+  display: flex;
+  align-items: center;
+}
+.logout-btn{
+  margin-left: 20px;
+  border-radius: 5px;
+  border: 2px solid white;
+  background-color: white;
+  
+}
+.logout-btn a{
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  padding: 3px 15px;
+  border: 2px solid black;
+}
+
+.logout-btn a:hover{
+  background-color: black;
+  color: white;
+}
+.list{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.list li{
+  list-style: none;
+  font-size: 18px;
+  gap: 20px;
+}
+
+.slider{
+  display: flex;
+ margin: 30px 40px 0px 40px ;
+ 
+}
+.bank-name-container{
+  width: 20vw;
+  height: 20vh;
+  background: -webkit-linear-gradient(0deg, rgb(138, 15, 61) 0%, rgb(207, 23, 60) 100%);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.slider-container{
+  display: flex;
+  flex-direction: column;
+}
+.slider-container1{
+  width: 80vw;
+  height:10vh ;
+  display: flex;
+
+}
+.list1{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex: 5;
+  font-size: 20px;
+}
+.list1 li{
+  list-style: none;
+}
+.list2{
+  display: flex;
+  align-items: center;
+  flex: 2;
+  justify-content: space-between;
+}
+.btn1{
+  width: 8vw;
+  height:6vh ;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+}
+.btn1:hover{
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+.btn2{
+  width:12vw ;
+  height: 6vh;
+  font-size: 20px;
+  background-color: white;
+  color: black;
+}
+.btn2:hover{
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+.slider-container2{
+  width: 80vw;
+  height:10vh ;
+  background: -webkit-linear-gradient(180deg, rgb(138, 15, 61) 0%, rgb(207, 23, 60) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  gap: 25px;
+}
+
+.bank-name-img{
+  width: 11vw;
+  height: 3vw;
+}
+
+.Balance-container {
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .bank{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .balance-name{
+    background-image: linear-gradient(to right, rgb(207, 23, 60) , rgb(138, 15, 61) );
+    background-clip: text;
+  -webkit-background-clip : text;
+  color: transparent;
+  }
+  .amount-cont{
+    display: flex;
+  }
+  .amount{
+    display: flex;
+    display: none;
+  }
+  #current,.rupees-simbol{
+    color: #de2730f6;
+  }
+  
+ 
+  .withdraw-container{
+    display: flex;
+    width: 100vw;
+    height: 10vh;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: -20px;
+  }
+
+  #btn1,#btn2{
+    width: 12vw;
+    height: 5vh;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  #btn1{
+    margin-left: 16.5vw;
+    background-color: #cf173c;
+      border: 2px solid #cf173c;
+      color: white;
+  }
+  #btn2{
+    margin-right: 16.5vw;
+    background-color: rgb(138, 15, 61);
+    border: 2px solid rgb(138, 15, 61);
+    color: white;
+  }
+ .two{
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+ }
+  .deposite {
+    background: #cf173c;
+    background: linear-gradient(to right,rgb(207, 23, 60),rgb(138, 15, 61));
+    color: white;
+    border-radius: 9px;
+    padding: 10px 0px;
+    visibility: hidden;
+    width: 25vw;
+    margin-left: 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 17px;
+  }
+  .dep-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .deposite-inputs{
+   width: 15vw;
+   height: 3vh;
+   border-radius: 5px;
+   border: 2px solid white;
+  }
+  .discription-container{
+    margin-top: 10px;
+  }
+ 
+  .deposite-heading{
+    margin-top: 10px;
+  }
+  .deposite h2,.withdraw h2{
+    display: flex;
+    justify-content: center;
+  }
+  .deposite-btn-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  #btndeposite,#btnwithdraw{
+    padding-inline: 40px;
+    padding-block: 7px;
+    border-radius: 5px;
+    border: 1px solid white;
+    cursor: pointer;
+    font-size: 18px;
+    color: #cf173c;
+    font-weight: 550;
+  }
+  #depositeinp ,#withdrawinp{
+    margin-left: 1.2vw;
+  }
+  .account-type{
+    display: flex;
+  }
+  
+  .radio-buttons{
+    margin-left: 80px;
+    display: flex;
+    gap: 5px;
+  }
+  .withdraw {
+    background: linear-gradient(to right,rgb(207, 23, 60),rgb(138, 15, 61));
+    border-radius: 9px;
+    padding: 10px 0px;
+    visibility: hidden;
+    width:25vw;
+    margin-right: 10vw;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 17px;
+   
+  }
+  .table-container{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    padding-bottom: 30px;
+
+  }
+  #transaction-heading{
+    color: red;
+    padding-block: 10px;
+    display: none;
+  }
+  table {
+    border: 2px solid black;
+    text-align: center;
+    display: none;
+    width: 74.5vw;
+  }
+  table th{
+    background-color:  #cf173c;
+    color: white;
+    padding: 5px 60px;
+    
+  }
+  table td{
+    background-color: white;
+  }
+  .material-icons{
+    margin-right: 15px;
+    color: red;
+    cursor: pointer;
+    display: flex;
+  }
+  #account-type2,#accounttype44{
+    margin-left: 10px;
+  }
+
+
+
+
+
+/* --------------------responsive------------------------ */
+
+@media screen and (max-width:800px) {
+  .list{
+    display: none;
+  }
+  .location{
+    display: none;
+  }
+  .list1{
+    display: none;
+
+  }
+  .list2{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .middle-text{
+    display: none;
+  }
+  .slider-container2{
+    display: flex;
+    justify-content: space-around;
+  }
+  
+}
+
+@media screen and (max-width:400px) {
+  .bank-name-container{
+    display: none;
+  }
+  .bank-name{
+    font-size: 13px;
+  }
+  .logout-btn{
+    font-size: 13px;
+  }
+  .slider-container{
+    width: 100vw;
+    height: 10vh;
+    margin-left: -50px;
+    margin-top: -15px;
+  }
+  .slider-container1{
+    width: 100vw;
+    
+    margin-left: 0px;
+  }
+  .slider-container2{
+    width: 100vw;
+    margin-left: 0px;
+  }
+  .btn2,.btn1{
+    font-size: 13px;
+    width: fit-content;
+    height: fit-content;
+    padding: 5px 10px;
+  }
+  .withdraw-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    gap: 10px;
+  }
+  #btn1,#btn2{
+    font-size: 17px;
+    width: fit-content;
+    padding: 5px 20px;
+    text-align: center;
+
+  }
+  #btn1{
+    margin-left: 0px;
+  }
+  #btn2{
+    margin-right: 0px;
+  }
+  .two{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: center;
+    gap: 10px;
+  }
+  .deposite{
+    width: 80vw;
+    margin-left: 0px;
+  }
+  .withdraw{
+    width: 80vw;
+    margin-right: 0px;
+  }
+  .deposite h2,.withdraw h2{
+    font-size: 20px;
+  }
+  #btndeposite,#btnwithdraw{
+    font-size: 16px;
+  }
+  .radio-buttons label{
+    font-size:14px ;
+  }
+  .deposite-inputs{
+    width: 40vw;
+  }
+  table{
+    width: 90vw;
+    padding: 0px 0px;
+  }
+  table th{
+    padding: 5px 1vw;
+    font-size: 12px;
+  }
+  .home-container{
+    height: fit-content;
+  }
+}

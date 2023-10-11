@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./signup.css">
+</head>
+<body>
+    <div class="signup-main-container">
+        <div class="signup-page">
+            <div>
+                <h1>Welcome to Fin Bank!</h1>
+            </div>
+            <div class="sign-up-text">
+                <p >If you have already have an account please login</p>
+            </div>
+            <form id="signupForm">
+                <div class="input-form">
+                    <div class="input-wrapper">
+                        <input type="text" placeholder="Name" class="input" required>
+                    </div>
+                    <div>
+                        <input type="email" placeholder="Email" class="input" id="username" required>
+                    </div>
+                    <div>
+                        <input type="number" placeholder="Number" class="input" required>
+                    </div>
+                    <div>
+                        <input type="password" placeholder="Enter new password" class="input" id="password" required>
+                    </div>
+                    <!-- <div>
+                        <input type="password" placeholder="Conform password" class="input">
+                    </div> -->
+                    <div class="sign-up-page-button">
+                        <button  class="button">Sign up</button>
+                        <button class="button"><a href="login.html">Login</a></button>
+                    </div>
+                </div>
+             
+            </form>
+           
+        </div>
+    </div>
+
+
+    <script>
+        document.getElementById("signupForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            var user = {
+                username: username,
+                password: password
+            };
+            localStorage.setItem("user", JSON.stringify(user));
+            if(username ==="" && password ===""){
+                alert("need email and password")
+            }
+            else{
+
+           
+            alert("Sign-in sucessful")
+            window.location.href= "login.html"
+        }
+        });
+    </script>
+
+
+
+</body>
+</html>

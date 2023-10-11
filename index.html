@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    
+  </head>
+  <body>
+    <div class="container">
+      <div class="main-container">
+        <div class="header">
+          <div class="left-header">
+            <p class="bank-name">
+              Info@example.com</p>
+              <p class="location">
+                Find Nearest Branch</p>
+                
+          </div>
+          <div class="right-header">
+            <div class="list">
+              <li>Careers</li>
+              <li>Faqs
+              </li>
+              <li>Business</li>
+              <li>Rewards</li>
+            </div>
+            <div class="login-btn-container">
+              <button class="logout-btn"><a href="login.html">Logout</a></button>
+              
+            </div>
+          </div>
+        </div>
+        <div class="slider">
+         <div class="bank-name-container">
+            <img src="http://fastwpdemo.com/newwp/finbank/wp-content/uploads/2022/10/logo-1.png" alt="" class="bank-name-img">
+         </div>
+         <div class="slider-container">
+           <div class="slider-container1">
+              <div class="list1">
+                 <li>Home</li>
+                 <li>Services</li>
+                 <li>About</li>
+                 <li>News</li>
+                 <li>Apply Now</li>
+                 <li>Get In Touch</li>
+              </div>
+              <div class="list2">
+                 <button class="btn1">Login</button>
+                 <button class="btn2">Open an Account </button>
+              </div>
+           </div>
+           <div class="slider-container2">
+              <div>
+               <p>Updates</p>
+              </div>
+              <div>
+                  <p class="middle-text">
+                    Get upto 4%* on our Savings Account Balances with Finbank.</p>
+              </div>
+              <div>
+                <p>More Details</p>
+              </div>
+           </div>
+         </div>
+        </div>
+      </div>
+
+      <div class="home-container">
+    <div class="Balance-container">
+      <div class="bank">
+        <h1 class="balance-name">Available Balance </h1>
+      <div class="amount-cont">
+        <div>
+          <h1><i class="material-icons" onclick="change()" id="eyeicon" >visibility_off</i></h1>
+        </div>
+        
+        <div class="amount" id="amounts">
+          <h1 class="rupees-simbol">₹ </h1>
+          <h1 id="current">0.00</h1>
+        </div>
+        
+      </div>
+        
+      </div>
+     </div>
+      
+      <div class="withdraw-container">
+          <button id="btn1" onclick="onclick1()">Deposite</button>
+        <button id="btn2" onclick="onclick2()">Withdraw</button>
+       
+      </div>
+      
+      <div class="two">
+          <div class="deposite">
+            <h2>Deposite</h2>
+            <div class="dep-container">
+              <div class="deposite-heading" >
+                <label for="depositeinp">Amount</label>
+                <input type="number"  id="depositeinp" class="deposite-inputs" required/>
+              </div>
+             
+              <div >
+                <div class="deposite-heading"><label >Account-Type</label></div>
+                
+                <div class="account-type">
+                  <div class="radio-buttons">
+                    <input type="radio" name="gender"  id="account-type" value="Savings" checked>
+                    <label for="account-type">Savings</label>
+    
+                    <input type="radio" name="gender"  id="account-type2" value="Current">
+                    <label for="account-type2">Current</label>
+                  </div>
+                 
+                </div>
+                
+               </div>
+               <div class="discription-container">
+                <label for="d-discription">Description</label>
+                <input type="text" placeholder="here....." name="d-discription" id="d-discription"  class="deposite-inputs" >
+               </div>
+            </div>
+           
+            <div class="deposite-btn-container">
+              <button id="btndeposite" onclick="deposite()">Deposite</button>
+            </div>
+           
+          </div>
+        
+        <div class="withdraw">
+          <h2>Withdraw</h2>
+          <div class="dep-container">
+            <div class="deposite-heading">
+              <label for="withdrawinp">Amount</label>
+              <input type="number" id="withdrawinp" class="deposite-inputs" required />
+            </div>
+           <div>
+            <div class="deposite-heading"><label >Account-Type</label></div>
+            <div class="account-type">
+              <div class="radio-buttons">
+                <input type="radio" name="accounttype" id="accounttype23" value="Savings" checked>
+                <label for="accounttype23">Savings</label>
+      
+                <input type="radio" name="accounttype" id="accounttype44" value="Current"  >
+                <label for="accounttype44">Current</label>
+              </div>
+              
+            </div>
+          
+           </div>
+          
+            
+           <div class="discription-container">
+            <label >Description</label>
+            <input type="text" placeholder="here....." id="distinction2-id" class="deposite-inputs">
+           </div>
+          </div>
+         
+         <div class="deposite-btn-container">
+          <button id="btnwithdraw" onclick=" withdraw() ">Withdraw</button>
+         </div>
+         
+        </div>
+      </div>
+      <div class="table-container">
+        
+        <div id="transaction-heading">
+          <h1>Transaction History</h1>
+        </div>
+        <form method="post" name="sample">
+          
+          <table id="tb1">
+            <thead>
+              <tr>
+                <th>Sl No</th>
+                <th >Amount</th>
+                <th>Type-of-Account</th>
+                <th>Description</th>
+                <th >Type</th>
+                <th >Balance</th>
+            </tr>
+          </thead>
+            <tbody id="tablebody">
+             
+            </tbody>
+            
+          </table>
+        </form>
+      </div>
+      </div>
+  
+    </div>
+   
+    <script src="./script.js"></script>
+    
+  </body>
+</html>

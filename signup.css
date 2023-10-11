@@ -1,0 +1,97 @@
+.signup-main-container{
+    flex: 1;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(250, 247, 242);
+}
+h1{
+    color: red;
+}
+.signup-page{
+    width: 60vw;
+    height: 80vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px  rgb(209, 84, 109);
+}
+.sign-up-text{
+    margin-top: -20px;
+    color:rgb(138, 15, 61) ;
+}
+.input{
+    width: 25vw;
+    height: 5vh;
+    border-radius: 20px;
+    border: 1px solid white;
+    box-shadow: 3px 3px 3px 3px rgb(207, 23, 60);
+    padding-left: 15px;
+}
+.button{
+    width: 11vw;
+    height: 5vh;
+    border-radius: 20px;
+    background: linear-gradient(to right,rgb(216, 42, 77),rgb(138, 15, 61));
+    box-shadow: 2px 2px 2px 2px rgb(234, 142, 160);
+    border: none;
+    color: white;
+    font-weight: 550;
+    font-size: 15px;
+    cursor: pointer;
+}
+.button a{
+    color: white;
+    text-decoration: none;
+}
+.input-form{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.sign-page-text{
+    text-decoration: none;
+    color: white;
+}
+.input-wrapper{
+    margin-top: -20px;
+}
+.sign-up-page-button{
+    display: flex;
+    justify-content: space-around;
+}
+   
+
+
+@media screen and (max-width:400px) {
+    .signup-page{
+        width: 80vw;
+        height: 73vh;
+    }
+    h1{
+        font-size: 23px;
+    }
+    .sign-up-text{
+        font-size: 11px;
+    }
+    .input{
+        width: 60vw;
+    }
+    .sign-up-page-button{
+        width: 65vw;
+        display: flex;
+        justify-content: space-between;
+    }
+    .button{
+        font-size: 15px;
+        width: 25vw;
+        
+    }
+    .signup-main-container{
+      height: 98vh;
+    }
+}

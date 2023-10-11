@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./login.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="container">
+            <div class="left-container">
+                <div class="left-contenet">
+                    <div>
+                        <h1>Welcome to Fin Bank!</h1>
+                    </div>
+                   <div>
+                    <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi cum quia iste neque 
+                        illo fugit optio velit adipisci expedita pariatur distinctio libero eveniet, animi dolore,
+                         quas perferendis impedit laudantium. Cum quia repellat quaerat numquam, velit sed quos
+                         architecto voluptates explicabo consectetur ducimus laborum mollitia maxime maiores. 
+                         Est quisquam, libero repellat doloribus quo nisi consequuntur fugiat ullam aliquam animi
+                         numquam blanditiis pariatur? Magni, necessitatibus aspernatur expedita labore odio dolores 
+                         debitis excepturi. illo fugit optio velit adipisci expedita pariatur distinctio libero eveniet, animi dolore,
+                         quas perferendis impedit laudantium. Cum quia repellat quaerat numquam, velit sed quos
+                         architecto voluptates explicabo consectetur ducimus laborum mollitia maxime maiores.illo fugit optio velit adipisci expedita pariatur distinctio libero eveniet, animi dolore,
+                         quas perferendis impedit laudantium. Cum quia repellat quaerat numquam, velit sed quos
+                         architecto voluptates explicabo consectetur ducimus laborum mollitia maxime maiores. </p>
+                   </div>
+                </div>
+                
+            </div>
+           
+            <div class="right-main-container">
+                <div  class="right-container">
+                    <div class="content">
+                        <div>
+                            <h1 class="hello">Hello!</h1>
+                            
+                        </div>
+                        <div class="text">
+                            <p>Log-in into your Account</p>
+                        </div>
+                        <form id="loginForm">
+
+                            <div class="input-container">
+                                <div>
+                                 <input type="Email" placeholder="Email" class="input" id="username">
+                                </div>
+             
+                                <div>
+                                 <input type="password" placeholder=" Password" class="input" id="password">
+                                </div>
+                         </div>
+                         <div class="forgot-password">
+                             <p>Remember me</p>
+                             <p>Forgot password?</p>
+                         </div>
+                        <div class="btn-container">
+                         <div>
+                             <button class="login-btn">Login</button>   
+                             
+                         </div>
+                         <div>
+                             <button class="sign-btn"><a href="signup.html" class="connect-page1">Sign-up</a></button>
+                         </div>
+                        </form>
+                       
+                        
+                       </div> 
+                    </div>
+                   
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+    <script>
+        
+    
+
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            var storedUser = JSON.parse(localStorage.getItem("user"));
+
+            if (storedUser && storedUser.username === username && storedUser.password === password) {
+                window.location.href= "index.html"
+               
+            } else {
+                alert("Invalid Email or Password. Please try again.");
+            }
+        });
+    </script>
+</body>
+</html>
